@@ -1,0 +1,132 @@
+{
+    "0": {
+        "n":"I awaken to a dull pain throbbing through most of my body.",
+        "c":"1"
+    },
+    "1": {
+        "mc":"Ow.",
+        "c":"2"
+    },
+    "2": {
+        "n":"I can't open my eyes, and my arms and legs are restrained.",
+        "c":"3"
+    },
+    "3": {
+        "mc":"Oh no.  What's going on?",
+        "c":"4"
+    },
+    "4": {
+        "n":"A tinny intercom speaker crackles to life.",
+        "c":"5"
+    },
+    "5": {
+        "md":"Mr. Hernandez, I'm glad you're awake.  I'm Dr. Detmer.  You're currently under observation here at St. Dymphna's Hospital.",
+        "c":"6"
+    },
+    "6": {
+        "mc":"Why can't I open my eyes?",
+        "c":"7"
+    },
+    "7":{
+        "md":"You suffered some rather severe lacerations to your head and face. The top of your head is completely bandaged.",
+        "c":"8"
+    },
+    "8":{
+        "mc":"Why am I restrained?",
+        "c":"9"
+    },
+    "9":{
+        "md":"Ah, about that.  I'll let Agent Guidry speak on that.",
+        "c":"a"
+    },
+    "a":{
+        "n":"The intercom crackles again as the mic is passed to a new speaker.",
+        "c":"b"
+    },
+    "b":{
+        "sa":"Mr. Hernandez, I'm Special Agent Mark Guidry with the Federal Bureau of Investigation, and I'm going to need to ask you some questions.",
+        "c":"c"
+    },
+    "c":{
+        "mc":"Okay... but why am I restrained?",
+        "c":"d"
+    },
+    "d":{
+        "sa":"Frankly, son, it's on account of all the god damned corpses we've got littering a picnic area in a national park and not knowing why you were found among them.",
+        "c":"e"
+    },
+    "e":{
+        "n":"A flash of pain strikes my head like a lighting bolt!",
+        "glitch":1,
+        "c":"f"
+    },
+    "f":{
+        "sa":"...which is also why I need to ask you some questions.",
+        "c":"g"
+    },
+    "g":{
+        "mc":"O-oh my god.",
+        "c":"h"
+    },
+    "h":{
+        "sa":"Indeed.  So, can you tell me what happened?",
+        "answers":[
+            {
+                "text":"\"I don't remember\" (truth)",
+                "nice":0.2,
+                "c":"i"
+            },
+            {
+                "text":"\"I don't remember\" (lie)",
+                "cruel":1.0,
+                "fear":0.2,
+                "c":"j"
+            }
+        ]
+    },
+    "i":{
+        "n":"I struggle to recall something--anything--about how I got here, but the only result is another stab of pain through my skull.",
+        "glitch":1,
+        "c":"k"
+    },
+    "j":{
+        "n":"I struggle to suppress a laugh.  I'm sure as hell not gonna tell this fed a thing.  He wouldn't believe me anyway.",
+        "glitch":1,
+        "c":""
+    },
+    "k":{
+        "mc":"I don-I don't really know.  I'm having a hard time recalling anything right now.",
+        "c":"l"
+    },
+    "l":{
+        "md":"Hmm... I wonder if either the physical or emotional trauma you experienced is a cause of this?",
+        "answers":[
+            {
+                "text":"It's probably physical, brain damage!",
+                "fear":0.5,
+                "c":"n"
+            },{
+                "text":"More likely it's emotional trauma.",
+                "fear":0.2,
+                "c":"n"
+            },{
+                "text":"Oh god, it's both!",
+                "fear":0.8,
+                "c":"n"
+            },{
+                "text":"I'm sure I'll be fine...",
+                "happy":0.2,
+                "c":"m"
+            }
+        ]
+    },
+    "m":{
+        "md":"Agent Guidry, perhaps you can help jog his memory by telling him some of what your investigation has uncovered about his activities that day?",
+        "c":"o"
+    },
+    "n":{
+        "n":"I'm doomed.",
+        "glitch":1.0,
+        "c":"m"
+    }
+}

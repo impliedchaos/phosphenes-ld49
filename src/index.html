@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Phosphenes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div id="sound" class="sound" onclick="soundtoggle()">
+            <img id="soundicon" alt="disable audio" src="assets/image/volume-high.svg"/>
+        </div>
+        <div id="info" class="info" onclick="abouttoggle()">
+            <img id="infoicon" alt="about" src="assets/image/information-outline.svg"/>
+        </div>
+        <div id="acont" class="acont" onclick="abouttoggle()">
+            <div id="about" class="about">
+                <b>Version</b>%%VERSION%%<br/><br/>
+                <b>Code + Sound + Script</b><br/> impliedchaos<br/>
+                <!-- <a target="_blank" href="https://implieschaos.itch.io/"><img src="https://img.shields.io/badge/itch.io-impliedchaos-bb4f4f?logo=itch.io&style=plastic"/></a><br/> -->
+                <a target="_blank" href="https://implieschaos.itch.io/"><img src="assets/image/itch.svg"/></a><br/>
+                <!-- <a target="_blank" href="https://twitter.com/impliedchaos"><img src="https://img.shields.io/badge/twitter-impliedchaos-1d9bf0?logo=twitter&style=plastic"/></a><br/> -->
+                <a target="_blank" href="https://github.com/impliedchaos"><img src="assets/image/twitter.svg"/></a><br/>
+                <!-- <a target="_blank" href="https://twitter.com/impliedchaos"><img src="https://img.shields.io/badge/GitHub-impliedchaos-24292f?logo=github&style=plastic"/></a><br/><br/> -->
+                <a target="_blank" href="https://github.com/impliedchaos"><img src="assets/image/github.svg"/></a><br/><br/>
+                <b>Fonts</b><br/>"Peleha"<br/>by <a target="_blank" href="https://brunosouzaleao.com.br/">Bruno de Souza Leão</a><br/><br/>
+                "Saarland"<br/>by Uwe Borchert</br></br>
+                <b>Icons</b><br/> Material Design<br/>by <a href="https://fonts.google.com/icons">Google</a>
+            </div>
+        </div>
+        <div id="tcont" class="tcont" onclick="start()">
+            <div id="title" class="title">
+                <h1 class="gamename">Phosphenes</h1>
+                by impliedchaos<br/><br/>
+                for Ludum Dare 49 - Unstable<br/><br/>
+            </div>
+        </div>
+        <div id="dcont" class="dcont">
+            <div class="dpad">
+                <div id="content">
+                    <div id="survey" class="survey">
+                        <div id="b0" class="answer box" onclick="answer(0)"></div>
+                        <div id="b1" class="answer box" onclick="answer(1)"></div>
+                        <div id="b2" class="answer box" onclick="answer(2)"></div>
+                        <div id="b3" class="answer box" onclick="answer(3)"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="dialog" class="dialog box">
+                <div id="name"></div>
+                <div id="text"></div>
+                <div id="nav"></div>
+            </div>
+        </div>
+        <canvas id="render"></canvas>
+    </body>
+</html>

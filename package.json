@@ -1,0 +1,16 @@
+{
+  "name": "phosphenes",
+  "version": "0.1.0",
+  "description": "test",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "npx http-server -c-1 src"
+  },
+  "author": "impliedchaos",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^13.0.2",
+    "minify": "^7.0.2"
+  }
+}
