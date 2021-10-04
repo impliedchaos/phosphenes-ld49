@@ -90,7 +90,7 @@
         "c":"k"
     },
     "j":{
-        "n":"I struggle to suppress a laugh.  I'm sure as hell not gonna tell this fed a thing.  He wouldn't believe me anyway.",
+        "n":"I barely manage to suppress a laugh.  I'm sure as hell not gonna tell this fed a thing.  He wouldn't believe me anyway.",
         "glitch":1,
         "c":""
     },
@@ -102,7 +102,7 @@
         "md":"Hmm... I wonder if either the physical or emotional trauma you experienced is a cause of this?",
         "answers":[
             {
-                "text":"It's probably physical, brain damage!",
+                "text":"It's probably physical. Now I've got brain damage!",
                 "fear":0.5,
                 "c":"n"
             },{
